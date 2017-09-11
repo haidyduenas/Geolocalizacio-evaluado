@@ -1,3 +1,9 @@
+'use strict'
+
+function initMap(){
+	appMaps.init();
+}
+
 const appMaps = {
 	settings : {
 		googleMap : undefined, //objeto de google maps
@@ -59,5 +65,3 @@ const appMaps = {
 		}
 	},
 }
-
-$(document).ready(appMaps.init);
