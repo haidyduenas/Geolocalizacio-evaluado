@@ -23,7 +23,7 @@ const appMaps = {
 	},
 	setup : function(){
 
-		appMaps.container = document.getElementById("map"), //$('#map') google no recibe el objeto jQuery;
+		appMaps.container = $('#map')[0],
 		$('#find').click(appMaps.getCurrentPosition);
 		appMaps.googleMapSettings = {
 			zoom: 5,
